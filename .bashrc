@@ -77,7 +77,8 @@ export BROWSER="firefox"		# Firefox
 export PAGER="most"			# Man Pages Colors
 
 #	Honny It's 4AM and you need to extratct...
-[ -f $HOME/bashfunctions/ex.sh ] && . $HOME/bashfunctions/ex.sh # This is a basic extract funcion, Disable it if you don't have it
+[ -f $HOME/bashfunctions/ex.sh ] && . $HOME/bashfunctions/ex.sh # This is a basic extract funcion, Disable it if you don't have it.
+#but, if you have it just make a folder called bashfunctions or change the directory here!
 
 #	Tab Config * This is like Fish's or ZSH tab complete
 bind TAB:menu-complete
