@@ -34,13 +34,13 @@ alias down="md ~/Downloads"
 alias etc="md /etc"
 
 #	Knock Knock, who's there? Sudo, Sudo who? Sudo This Package for me!
-alias d="doas"				#	Give admin
+alias d="doas"				#	Give root
 
 #	Hey kid! You want some Packages?
 alias ds="doas pacman -S"			#	Install from the standard pkglibrary
 alias dup="doas pacman -Syyu"			#	Update standard pkgs
-alias auronly="yay -Sua --noconfirm"		#	Update only AUR pakages
-alias yapall="yay -Syu --noconfirm"		#	Update all standard and AUR pkgs
+alias upaur="yay -Sua --noconfirm"		#	Update only AUR pakages
+alias update-all-pkgs="yay -Syu --noconfirm"	#	Update all standard and AUR pkgs * I don't recommend this
 alias yas="yay -S"				#	Install using YAY
 alias spring="doas pacman -Rns $(pacman -Qtdq)" #	Removes orphaned pakages *Never use it
 alias lockoff="doas rm /var/lib/pacman/db.lock"	#	Removes database locks *Just in case
